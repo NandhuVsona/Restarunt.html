@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      gap: 25px;
+      visibility: hidden;
+
+
+
+    }
+
+    #ptag {
+      font-size: 30px;
+    }
+
+    #htag {
+      font-size: 80px;
+    }
+
+    #button {
+
+
+      width: 200px;
+      height: 50px;
+      font-size: 20px;
+      border-radius: 10px;
+      border: groove;
+      background-color: rgb(255, 0, 0);
+      color: white;
+    }
+
+    b {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+    }
+
+    #start {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="end">
+    <b><button id="button">Start</button></b>
+    <div id="container" class="container cont">
+      <h1 id="htag"></h1>
+      <p id="ptag">Loading...</p>
+    </div>
+  </div>
+  <div id="start">
+    <div class="grid-container" id="grid-containers">
+      <div class="left-container" id="left">
+        <div class="being">
+          <p class="menu">MENUS</p>
+          <div class="items">
+            <p class="veg">Non-Veg</p>
+            <hr>
+            <ul>
+              <li><a href="">Fish</a></li>
+              <li><a href="">Pork</a></li>
+              <li><a href="">Chicken</a></li>
+              <li><a href="">Motton</a></li>
+              <li><a href="">Beef</a></li>
+              <li><a href="">Crab</a></li>
+              <li><a href="">Duck</a></li>
+              <li><a href="">Soup</a></li>
+            </ul>
+          </div>
+          <div class="items">
+            <p class="veg colorvag">Veg</p>
+            <hr>
+            <ul>
+              <li><a href="">Pongal</a></li>
+              <li><a href="">Idly</a></li>
+              <li><a href="">Poori</a></li>
+              <li><a href="">Curd Rice</a></li>
+              <li><a href="">Chapaathi</a></li>
+              <li><a href="">Tomato Rice</a></li>
+              <li><a href="">Veg Rice</a></li>
+              <li><a href="">Gee Rice</a></li>
+            </ul>
+          </div>
+          <div class="items">
+            <p class="veg">Fast Foods</p>
+            <hr>
+            <ul>
+              <li><a href="">Pizza</a></li>
+              <li><a href="">Burger</a></li>
+              <li><a href="">Chicken Rice</a></li>
+              <li><a href="">Fried Rice</a></li>
+              <li><a href="">Shwarma</a></li>
+            </ul>
+
+          </div>
+          <hr>
+        </div>
+      </div>
+      <div class="centre-container" id="center">
+        <header id="amimation-1">
+          <div id="hamburger">
+            <div id="top"></div>
+            <div id="middle"></div>
+            <div id="botton"></div>
+          </div>
+          <h2>Welcome</h2>
+          <div class="search">
+            <input type="search" placeholder="Search Your Favorite">
+            <img src="
+          " alt="">
+            <div id="boxs">
+              <div id="circle"></div>
+            </div>
+          </div>
+          <div class="ham">
+            <span id="result"><img class="shopimage" src="shopping card.png" alt=""></span>
+          </div>
+        </header>
+        <div class="favorite">
+          <h3>Favorite Foods</h3>
+          <p>See All</p>
+        </div>
+        <hr>
+        
+          <div class="cards">
+            <div class="top-card">
+              <img class="img" src="./images/dosa.jpg" alt="">
+              <p>Dosai</p>
+            </div>
+            <div class="top-card">
+              <img class="img" src="./images/fish.jpg" alt="">
+              <p>Fishfry</p>
+            </div>
+            <div class="top-card">
+              <img class="img" src="./images/foods.jpg" alt="">
+              <p>Badam</p>
+            </div>
+            <div class="top-card">
+              <img class="img" src="./images/uppma.jpg" alt="">
+              <p>opma</p>
+            </div>
+            <div class="top-card">
+              <img class="img" src="./images/juice.jpg" alt="">
+              <p>Juice</p>
+            </div>
+            <div class="top-card">
+              <img class="img" src="./images/fruits.jpg" alt="">
+              <p>Fritus</p>
+            </div>
+            <div class="top-card">
+              <img class="img" src="./images/laddu.jpg" alt="">
+              <p>Sweets</p>
+            </div>
+          </div>
+
+        
+        <div class="favorite">
+          <h3>Recommended for You</h3>
+          <p>See All</p>
+        </div>
+        <hr>
+        <div class="foods">
+          <div class="mix">
+            <img loading="lazy" class="ice" src="./images/waterberry.jpg" alt="">
+            <div class="card-details">
+              <p>Cone Icecream</p>
+              <div class="price">
+                <p class="thick">&#8377 25</p>
+                <p class="thin">M.R.P: <strike>&#8377 40</strike> (63%off)</p>
+              </div>
+              <button onclick="result.innerHTML=items+1;console.log(items)" class="addtocard">Add to card</button>
+            </div>
+          </div>
+          <div class="mix">
+            <img loading="lazy" class="ice" src="./images/straberry.jpg" alt="">
+            <div class="card-details">
+              <p>straberry Icecream</p>
+              <div class="price">
+                <p class="thick">&#8377 30</p>
+                <p class="thin">M.R.P: <strike>&#8377 60</strike> (50%off)</p>
+              </div>
+              <button onclick="result.innerHTML=items+1" class="addtocard">Add to card</button>
+            </div>
+
+          </div>
+          <div class="mix">
+            <img loading="lazy" class="ice" src="./images/ice-1.jpg" alt="">
+            <div class="card-details">
+              <p>Vennila Icecream</p>
+              <div class="price">
+                <p class="thick">&#8377 50</p>
+                <p class="thin">M.R.P: <strike>&#8377 100</strike> (50%off)</p>
+              </div>
+              <button onclick="result.innerHTML=items+1" class="addtocard">Add to card</button>
+            </div>
+
+          </div>
+          <div class="mix">
+            <img loading="lazy" class="ice" src="./images/mixeer.jpg" alt="">
+            <div class="card-details">
+              <p>Fruits Icecream</p>
+              <div class="price">
+                <p class="thick">&#8377 80</p>
+                <p class="thin">M.R.P: <strike>&#8377 120</strike> (67%off)</p>
+              </div>
+              <button onclick="result.innerHTML=items+1" class="addtocard">Add to card</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="favorite">
+          <h3>Snacks</h3>
+          <p>See All</p>
+        </div>
+        <hr>
+        <div class="foods">
+          <div class="mix">
+            <img loading="lazy" class="ice" src="./images/biscut-1.jpeg" alt="">
+            <div class="card-details">
+              <p>Biscuits (piece of 20)</p>
+              <div class="price">
+                <p class="thick">&#8377 50</p>
+                <p class="thin">M.R.P: <strike>&#8377 100</strike> (50%off)</p>
+              </div>
+              <button onclick="result.innerHTML=items+1" class="addtocard">Add to card</button>
+            </div>
+          </div>
+          <div class="mix">
+            <img loading="lazy" class="ice" src="./images/snaks.jpg" alt="">
+
+            <div class="card-details">
+              <p>Combo Snacks</p>
+              <div class="price">
+                <p class="thick">&#8377 100</p>
+                <p class="thin">M.R.P: <strike>&#8377 150</strike> (67%off)</p>
+              </div>
+              <button onclick="result.innerHTML=items+1" class="addtocard">Add to card</button>
+            </div>
+          </div>
+          <div class="mix">
+            <img loading="lazy" class="ice" src="./images/mixture.jpg" alt="">
+            <div class="card-details">
+              <p>Mixture (1kg)</p>
+              <div class="price">
+                <p class="thick">&#8377 50</p>
+                <p class="thin">M.R.P: <strike>&#8377 100</strike> (50%off)</p>
+              </div>
+              <button onclick="result.innerHTML=items+1" class="addtocard">Add to card</button>
+            </div>
+          </div>
+          <div class="mix">
+            <img loading="lazy" class="ice" src="./images/lays.jpg" alt="">
+            <div class="card-details">
+              <p>Tomato Chips (200g)</p>
+              <div class="price">
+                <p class="thick">&#8377 80</p>
+                <p class="thin">M.R.P: <strike>&#8377 160</strike> (50%off)</p>
+              </div>
+              <button onclick="result.innerHTML=items+1" class="addtocard">Add to card</button>
+            </div>
+          </div>
+        </div>
+        <div class="favorite">
+          <h3>Cakes</h3>
+          <p>See All</p>
+        </div>
+        <hr>
+        <div class="foods">
+          <div class="mix">
+            <img loading="lazy" class="ice" src="./images/firstcake.jpg" alt="">
+            <div class="card-details">
+              <p>straberry Cake</p>
+              <div class="price">
+                <p class="thick">&#8377 25</p>
+                <p class="thin">M.R.P: <strike>&#8377 40</strike> (63%off)</p>
+              </div>
+              <button onclick="result.innerHTML=items+1" class="addtocard">Add to card</button>
+            </div>
+          </div>
+          <div class="mix">
+            <img loading="lazy" class="ice" src="./images/cake-1.jpg" alt="">
+            <div class="card-details">
+              <p>Blackforest</p>
+              <div class="price">
+                <p class="thick">&#8377 250</p>
+                <p class="thin">M.R.P: <strike>&#8377 450</strike> (56%off)</p>
+              </div>
+              <button onclick="result.innerHTML=items+1" class="addtocard">Add to card</button>
+            </div>
+          </div>
+          <div class="mix">
+            <img loading="lazy" class="ice" src="./images/cakeice.jpg" alt="">
+            <div class="card-details">
+              <p>Cupcake</p>
+              <div class="price">
+                <p class="thick">&#8377 10</p>
+                <p class="thin">M.R.P: <strike>&#8377 20</strike> (50%off)</p>
+              </div>
+              <button onclick="result.innerHTML=items+1" class="addtocard">Add to card</button>
+            </div>
+          </div>
+          <div class="mix">
+            <img loading="lazy" class="ice" src="./images/cake-2.jpg" alt="">
+            <div class="card-details">
+              <p>Piece Cake</p>
+              <div class="price">
+                <p class="thick">&#8377 15</p>
+                <p class="thin">M.R.P: <strike>&#8377 30</strike> (50%off)</p>
+              </div>
+              <button onclick="result.innerHTML=(items+1)" class="addtocard">Add to card</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="right-container" id="right">
+        <div class="container-3">
+          <h3 style="text-align:left; margin: 5px;">Our Specials</h3>
+        </div>
+        <div class="people">
+          <div class="four">
+            <img loading="lazy" class="right-img" src="./images/rice.jpeg" alt="">
+            <div class="opps">
+              <p class="bold">Tamil Traditaional</p>
+              <p>Customers Mostly Liked</p>
+              <p>Along With 12 Fries</p>
+            </div>
+          </div>
+          <hr>
+          <div class="four">
+            <img loading="lazy" class="right-img" src="./images/idly.jpg" alt="">
+            <div class="opps">
+              <p class="bold">Idly And Vadai</p>
+              <p>Customers Mostly Liked</p>
+              <p>Along With 5 Curry</p>
+            </div>
+          </div>
+          <hr>
+          <div class="four">
+            <img loading="lazy" class="right-img" src="./images/masaladosai.jpg" alt="">
+            <div class="opps">
+              <p class="bold">Masal Dosai</p>
+              <p>Customers Mostly Liked</p>
+              <p>Along With 5 Curry</p>
+            </div>
+          </div>
+          <hr>
+          <div class="four">
+            <img loading="lazy" class="right-img" src="./images/burger.jpg" alt="">
+            <div class="opps">
+              <p class="bold">Burger</p>
+              <p>Customers Mostly Liked</p>
+              <p>Along With 3 Minus</p>
+            </div>
+          </div>
+          <hr>
+          <div class="jelly">
+            <p>Jelly Halwa</p>
+            <img loading="lazy" class="jelly-img" src="./images/heatrcandy.jpeg" alt="">
+            <p>The Most Selled And Customers Favorite In Our Restarunt</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
